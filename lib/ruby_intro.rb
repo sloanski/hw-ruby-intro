@@ -77,8 +77,9 @@ class BookInStock
  
  
   
-  def price_as_string? r
-    return number_to_currency(r, precision: 2)
+  def price_as_string
+    format("$%.2f", @price)
+    #return number_to_currency(r, precision: 2)
   end
     
   
